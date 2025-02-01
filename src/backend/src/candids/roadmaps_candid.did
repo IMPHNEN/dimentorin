@@ -1,0 +1,109 @@
+service : {
+    "get_roadmaps": () -> (vec record {
+        id: nat64;
+        title: text;
+        description: text;
+        user: principal;
+        status: text;
+        start_at: nat64;
+        end_at: nat64;
+        created_at: nat64;
+        updated_at: nat64;
+    }) query;
+
+    "get_roadmap": (nat64) -> (opt record {
+        id: nat64;
+        title: text;
+        description: text;
+        user: principal;
+        status: text;
+        start_at: nat64;
+        end_at: nat64;
+        created_at: nat64;
+        updated_at: nat64;
+    }) query;
+
+    "get_roadmap_item": (nat64) -> (vec record {
+        id: nat64;
+        roadmap_id: nat64;
+        title: text;
+        description: text;
+        status: text;
+        day: nat64;
+        article_id: opt nat64;
+        result: opt text;
+        user: principal;
+        created_at: nat64;
+        updated_at: nat64;
+    }) query;
+
+    "create_roadmap": (
+        text,
+        text
+    ) -> (variant { Ok: record {
+        id: nat64;
+        title: text;
+        description: text;
+        user: principal;
+        status: text;
+        start_at: nat64;
+        end_at: nat64;
+        created_at: nat64;
+        updated_at: nat64;
+    }; Err: text });
+
+    "create_roadmap_item": (
+        nat64,
+        text,
+        text,
+        nat64
+    ) -> (variant { Ok: record {
+        id: nat64;
+        roadmap_id: nat64;
+        title: text;
+        description: text;
+        status: text;
+        day: nat64;
+        article_id: opt nat64;
+        result: opt text;
+        user: principal;
+        created_at: nat64;
+        updated_at: nat64;
+    }; Err: text });
+
+    "update_roadmap_item": (
+        nat64,
+        text,
+        opt text
+    ) -> (variant { Ok: record {
+        id: nat64;
+        roadmap_id: nat64;
+        title: text;
+        description: text;
+        status: text;
+        day: nat64;
+        article_id: opt nat64;
+        result: opt text;
+        user: principal;
+        created_at: nat64;
+        updated_at: nat64;
+    }; Err: text });
+
+    "update_roadmap_item_article": (
+        principal,
+        nat64,
+        nat64
+    ) -> (variant { Ok: record {
+        id: nat64;
+        roadmap_id: nat64;
+        title: text;
+        description: text;
+        status: text;
+        day: nat64;
+        article_id: opt nat64;
+        result: opt text;
+        user: principal;
+        created_at: nat64;
+        updated_at: nat64;
+    }; Err: text });
+}

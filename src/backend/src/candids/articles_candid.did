@@ -1,0 +1,74 @@
+service : {
+    "get_articles": () -> (vec record {
+        id: nat64;
+        roadmap_item_id: nat64;
+        title: text;
+        content: text;
+        like_count: nat64;
+        likes: vec principal;
+        author: principal;
+        day: nat64;
+        status: variant { Published; Draft };
+        created_at: nat64;
+        updated_at: nat64;
+    }) query;
+
+    "get_article": (nat64) -> (opt record {
+        id: nat64;
+        roadmap_item_id: nat64;
+        title: text;
+        content: text;
+        like_count: nat64;
+        likes: vec principal;
+        author: principal;
+        day: nat64;
+        status: variant { Published; Draft };
+        created_at: nat64;
+        updated_at: nat64;
+    }) query;
+
+    "create_article": (
+        nat64,
+        text,
+        text,
+        nat64,
+        variant { Published; Draft }
+    ) -> (variant { Ok: record {
+        id: nat64;
+        roadmap_item_id: nat64;
+        title: text;
+        content: text;
+        like_count: nat64;
+        likes: vec principal;
+        author: principal;
+        day: nat64;
+        status: variant { Published; Draft };
+        created_at: nat64;
+        updated_at: nat64;
+    }; Err: text });
+
+    "like_article": (nat64) -> (bool);
+
+    "update_article": (
+        nat64,
+        opt nat64,
+        opt text,
+        opt text,
+        opt nat64,
+        opt variant { Published; Draft }
+    ) -> (variant { Ok: record {
+        id: nat64;
+        roadmap_item_id: nat64;
+        title: text;
+        content: text;
+        like_count: nat64;
+        likes: vec principal;
+        author: principal;
+        day: nat64;
+        status: variant { Published; Draft };
+        created_at: nat64;
+        updated_at: nat64;
+    }; Err: text });
+
+    "delete_article": (nat64) -> (variant { Ok: bool; Err: text });
+}

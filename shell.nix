@@ -2,11 +2,13 @@
 pkgs.mkShell {
   inputsFrom = [(pkgs.callPackage ./default.nix {})];
   buildInputs = with pkgs; [
-    nodejs22
+    libunwind
+    nodejs_22
     rust-analyzer
     rustfmt
     crate2nix
     clippy
+    lld
 
     (writeScriptBin "helpme" ''
       __usage="
@@ -34,8 +36,12 @@ pkgs.mkShell {
       echo "$__usage"
     '')
 
-    (writeScriptBin "dev" ''
+    (writeScriptBin "dev-be" ''
       cargo watch -x run
+    '')
+
+    (writeScriptBin "dev-fe" ''
+      npm run start
     '')
 
     (writeScriptBin "start" ''
@@ -65,13 +71,14 @@ pkgs.mkShell {
   ];
 
   shellHook = ''
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${pkgs.libunwind}/lib
     helpme
     if [ -f .env ]; then
-       echo "Loading .env file..."
-       export $(cat .env | xargs)
-       echo "Successfully applied .env file."
-     else
-       echo ".env file not found."
-     fi
+      echo "Loading .env file..."
+      export $(cat .env | xargs)
+      echo "Successfully applied .env file."
+    else
+      echo ".env file not found."
+    fi
   '';
 }

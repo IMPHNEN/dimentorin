@@ -1,19 +1,27 @@
 {
   "canisters": {
-    "dimentorin_backend": {
-      "candid": "src/dimentorin_backend/dimentorin_backend.did",
-      "package": "dimentorin_backend",
-      "type": "rust"
+    "articles": {
+      "candid": "src/backend/src/candids/articles_candid.did",
+      "package": "backend",
+      "type": "rust",
+      "build": "cargo build --target wasm32-unknown-unknown --release"
     },
-    "dimentorin_frontend": {
+    "roadmaps": {
+      "candid": "src/backend/src/candids/roadmaps_candid.did",
+      "package": "backend",
+      "type": "rust",
+      "build": "cargo build --target wasm32-unknown-unknown --release"
+    },
+    "frontend": {
       "dependencies": [
-        "dimentorin_backend"
+        "articles",
+        "roadmaps"
       ],
       "source": [
-        "src/dimentorin_frontend/dist"
+        "src/frontend/dist"
       ],
       "type": "assets",
-      "workspace": "dimentorin_frontend"
+      "workspace": "frontend"
     }
   },
   "defaults": {
