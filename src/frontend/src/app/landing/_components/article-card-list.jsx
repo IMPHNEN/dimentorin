@@ -1,9 +1,8 @@
 import React from "react";
-import { Card } from "./Card";
+import { Card } from "./card";
 
 export const ArticleCardList = () => {
   return (
-    <>
       <section
         id="article-list"
         className="w-full max-w-8xl px-6 mb-10 overflow-x-auto"
@@ -31,6 +30,5 @@ export const ArticleCardList = () => {
           />
         </div>
       </section>
-    </>
   );
 };

@@ -2,7 +2,6 @@ import React from "react";
 
 export const Consultation = () => {
   return (
-    <>
       <section id="consultation" className="w-full max-w-8xl px-6 my-12">
         <div className="text-white items-start lg:items-center flex flex-col lg:flex-row gap-x-16 gap-y-6 mb-8">
           <h2 className="text-4xl lg:text-5xl font-semibold font-baim">
@@ -24,6 +23,5 @@ export const Consultation = () => {
           />
         </div>
       </section>
-    </>
   );
 };

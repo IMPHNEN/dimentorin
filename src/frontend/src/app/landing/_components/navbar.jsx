@@ -2,7 +2,6 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <>
       <header className="bg-black w-full flex justify-center min-h-[86px] sticky top-0 z-50">
         <nav className="flex items-center max-w-8xl w-full justify-between px-6 py-4 bg-black text-white">
           <div className="text-xl font-semibold font-baim select-none">
@@ -35,6 +34,5 @@ export const Navbar = () => {
           </div>
         </nav>
       </header>
-    </>
   );
 };

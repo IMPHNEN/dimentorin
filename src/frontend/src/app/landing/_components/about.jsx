@@ -2,10 +2,8 @@ import React from "react";
 
 export const About = () => {
   return (
-    <>
       <section id="about" className="w-full max-w-8xl px-6 mt-32 mb-12">
         <div className="flex flex-col lg:flex-row gap-4 align-middle">
-          {/* Profile progress */}
           <section className="flex-grow flex flex-col justify-between py-3 me-4">
             <div>
               <div className="font-semibold font-baim text-white text-3xl">
@@ -22,7 +20,6 @@ export const About = () => {
             </div>
           </section>
 
-          {/* Day progress & leaderboard */}
           <section className="flex space-x-4">
             <div className="flex flex-col justify-center text-center rounded-3xl bg-purple text-white w-36 h-36">
               <div>Day progress</div>
@@ -51,6 +48,5 @@ export const About = () => {
           </section>
         </div>
       </section>
-    </>
   );
 };

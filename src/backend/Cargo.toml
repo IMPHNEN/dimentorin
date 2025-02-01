@@ -13,3 +13,4 @@ ic-cdk-macros = "0.17.1"
 ic-cdk-timers = "0.10"
 md5 = "0.7.0"
 serde = { version = "1.0.217", features = ["derive"] }
+sha2 = "0.10.8"

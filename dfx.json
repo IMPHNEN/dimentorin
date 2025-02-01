@@ -12,10 +12,17 @@
       "type": "rust",
       "build": "cargo build --target wasm32-unknown-unknown --release"
     },
+    "auths": {
+      "candid": "src/backend/src/candids/auths_candid.did",
+      "package": "backend",
+      "type": "rust",
+      "build": "cargo build --target wasm32-unknown-unknown --release"
+    },
     "frontend": {
       "dependencies": [
         "articles",
-        "roadmaps"
+        "roadmaps",
+        "auths"
       ],
       "source": [
         "src/frontend/dist"

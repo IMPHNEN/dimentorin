@@ -2,7 +2,6 @@ import React from "react";
 
 export const Banner = () => {
   return (
-    <>
       <section
         className="flex flex-col items-center justify-center h-full bg-black text-white w-full px-6"
         style={{
@@ -41,6 +40,5 @@ export const Banner = () => {
           </a> */}
         </div>
       </section>
-    </>
   );
 };

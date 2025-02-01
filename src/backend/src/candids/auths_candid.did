@@ -1,0 +1,45 @@
+service : {
+    create_new_token: (nat64) -> (nat64);
+    transfer: (principal, nat64) -> (bool);
+    get_balance: (principal) -> (nat64) query;
+    get_total_supply: () -> (nat64) query;
+    get_users: () -> (vec record {
+        "principal": principal;
+        wallet: record {
+            author: principal;
+            balance: nat64;
+            is_premium: bool;
+        };
+        name: text;
+        email: text;
+        is_premium: bool;
+        registration_date: nat64;
+    }) query;
+    get_user_info: (principal) -> (opt record {
+        "principal": principal;
+        wallet: record {
+            author: principal;
+            balance: nat64;
+            is_premium: bool;
+        };
+        name: text;
+        email: text;
+        is_premium: bool;
+        registration_date: nat64;
+    }) query;
+    is_admin: (principal) -> (bool) query;
+    add_admin: (principal) -> (bool);
+    init: () -> (bool);
+    register: (principal, text, text) -> (opt record {
+        "principal": principal;
+        wallet: record {
+            author: principal;
+            balance: nat64;
+            is_premium: bool;
+        };
+        name: text;
+        email: text;
+        is_premium: bool;
+        registration_date: nat64;
+    });
+}
