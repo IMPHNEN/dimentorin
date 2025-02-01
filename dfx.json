@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "dimentorin_backend": {
+      "candid": "src/dimentorin_backend/dimentorin_backend.did",
+      "package": "dimentorin_backend",
+      "type": "rust"
+    },
+    "dimentorin_frontend": {
+      "dependencies": [
+        "dimentorin_backend"
+      ],
+      "source": [
+        "src/dimentorin_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "dimentorin_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

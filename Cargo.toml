@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/dimentorin_backend"
+]
+resolver = "2"
