@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 export const Sidebar = () => {
   return (
-    <aside className="col-span-2 bg-[#171717] text-white">
+    <aside className="col-span-1 bg-[#171717] text-white">
       <div className="flex min-h-[800px] flex-col place-items-start gap-y-6 px-8 py-12">
         <div className="font-baim mb-16 text-2xl font-bold">Dashboard</div>
         <a
