@@ -8,6 +8,7 @@ import { SignUpPage } from "./signup/page";
 import { ProfileEditPage } from "./profile/edit/page";
 import { ProfileSettingPage } from "./profile/setting/page";
 import { ProfileHelpPage } from "./profile/help/page";
+import { ConsultationPage } from "./consultation/page";
 
 export const routes = createBrowserRouter([
   {
@@ -41,5 +42,9 @@ export const routes = createBrowserRouter([
   {
     path: "/goals",
     element: <GoalsPage />,
+  },
+  {
+    path: "/consultation",
+    element: <ConsultationPage />,
   },
 ]);
