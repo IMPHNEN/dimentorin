@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from "@iconify/react";
+import { HelpItem } from "./help-item";
 
 export const ProfileHelp = () => {
   return (
@@ -11,74 +11,31 @@ export const ProfileHelp = () => {
           </span>
         </div>
         <div className="rounded-lg bg-[#292929] p-6">
-          <div className="flex items-center gap-x-5">
-            <div>
-              <span className="block">About your account</span>
-              <span className="block text-[#D3D2D2]">
-                Information about account settings, profile management, and
-                preferences
-              </span>
-            </div>
-            <Icon
-              icon="mdi:chevron-right"
-              width={24}
-              height={24}
-              className="ml-auto hover:cursor-pointer"
-            />
-          </div>
+          <HelpItem
+            label="About your account"
+            description="Information about account settings, profile management, and preferences"
+          />
           <div className="my-4 px-4">
             <hr className="text-[#403E3E]" />
           </div>
-          <div className="flex items-center gap-x-5">
-            <div>
-              <span className="block">Privacy policy</span>
-              <span className="block text-[#D3D2D2]">
-                Details on how user data is collected, used, and protected
-              </span>
-            </div>
-            <Icon
-              icon="mdi:chevron-right"
-              width={24}
-              height={24}
-              className="ml-auto hover:cursor-pointer"
-            />
-          </div>
+          <HelpItem
+            label="Privacy policy"
+            description="Details on how user data is collected, used, and protected"
+          />
           <div className="my-4 px-4">
             <hr className="text-[#403E3E]" />
           </div>
-          <div className="flex items-center gap-x-5">
-            <div>
-              <span className="block">Open source libraries</span>
-              <span className="block text-[#D3D2D2]">
-                A list of open-source libraries and their licenses used in the
-                app
-              </span>
-            </div>
-            <Icon
-              icon="mdi:chevron-right"
-              width={24}
-              height={24}
-              className="ml-auto hover:cursor-pointer"
-            />
-          </div>
+          <HelpItem
+            label="Open source libraries"
+            description="A list of open-source libraries and their licenses used in the app"
+          />
           <div className="my-4 px-4">
             <hr className="text-[#403E3E]" />
           </div>
-          <div className="flex items-center gap-x-5">
-            <div>
-              <span className="block">App updates</span>
-              <span className="block text-[#D3D2D2]">
-                Information about new features, improvements, and bug fixes in
-                the latest app
-              </span>
-            </div>
-            <Icon
-              icon="mdi:chevron-right"
-              width={24}
-              height={24}
-              className="ml-auto hover:cursor-pointer"
-            />
-          </div>
+          <HelpItem
+            label="App updates"
+            description="Information about new features, improvements, and bug fixes in the latest app"
+          />
         </div>
       </div>
     </main>

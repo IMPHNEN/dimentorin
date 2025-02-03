@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from "@iconify/react";
+import { SettingItem } from "./setting-item";
 
 export const ProfileSetting = () => {
   return (
@@ -11,78 +11,35 @@ export const ProfileSetting = () => {
           </span>
         </div>
         <div className="rounded-lg bg-[#292929] p-6">
-          <div className="flex items-center gap-x-5">
-            <Icon icon="mdi:shield-outline" width={24} height={24} />
-            <div>
-              <span className="block">Password and security</span>
-              <span className="block text-[#D3D2D2]">
-                Settings to secure the account through passwords and other
-                security features
-              </span>
-            </div>
-            <Icon
-              icon="mdi:chevron-right"
-              width={24}
-              height={24}
-              className="ml-auto hover:cursor-pointer"
-            />
-          </div>
+          <SettingItem
+            icon="mdi:shield-outline"
+            label="Password and security"
+            description="Settings to secure the account through passwords and other security features"
+          />
           <div className="my-4 px-4">
             <hr className="text-[#403E3E]" />
           </div>
-          <div className="flex items-center gap-x-5">
-            <Icon icon="mdi:people-outline" width={24} height={24} />
-            <div>
-              <span className="block">Personal detail</span>
-              <span className="block text-[#D3D2D2]">
-                Personal user information such as name, address, or date of
-                birth
-              </span>
-            </div>
-            <Icon
-              icon="mdi:chevron-right"
-              width={24}
-              height={24}
-              className="ml-auto hover:cursor-pointer"
-            />
-          </div>
+          <SettingItem
+            icon="mdi:people-outline"
+            label="Personal detail"
+            description="Personal user information such as name, address, or date of birth"
+          />
           <div className="my-4 px-4">
             <hr className="text-[#403E3E]" />
           </div>
-          <div className="flex items-center gap-x-5">
-            <Icon icon="mdi:journal-outline" width={24} height={24} />
-            <div>
-              <span className="block">Your information and permission</span>
-              <span className="block text-[#D3D2D2]">
-                Data shared by the user and access permissions for apps or
-                services
-              </span>
-            </div>
-            <Icon
-              icon="mdi:chevron-right"
-              width={24}
-              height={24}
-              className="ml-auto hover:cursor-pointer"
-            />
-          </div>
+          <SettingItem
+            icon="mdi:journal-outline"
+            label="Your information and permission"
+            description="Data shared by the user and access permissions for apps or services"
+          />
           <div className="my-4 px-4">
             <hr className="text-[#403E3E]" />
           </div>
-          <div className="flex items-center gap-x-5">
-            <Icon icon="mdi:login" width={24} height={24} />
-            <div>
-              <span className="block">Log in</span>
-              <span className="block text-[#D3D2D2]">
-                Option to log in using a registered account
-              </span>
-            </div>
-            <Icon
-              icon="mdi:chevron-right"
-              width={24}
-              height={24}
-              className="ml-auto hover:cursor-pointer"
-            />
-          </div>
+          <SettingItem
+            icon="mdi:login"
+            label="Log in"
+            description="Option to log in using a registered account"
+          />
         </div>
       </div>
     </main>
