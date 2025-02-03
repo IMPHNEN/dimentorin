@@ -30,7 +30,7 @@ export const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="/buy-token" className="hover:underline">
+            <a href="/pricings" className="hover:underline">
               Buy Token
             </a>
           </li>

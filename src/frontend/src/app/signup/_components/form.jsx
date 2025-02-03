@@ -23,9 +23,12 @@ export const Form = () => {
         required
       />
       <Input type="password" placeholder="********" label="Password" required />
-      <button className="mt-6 mb-2 flex w-full justify-center gap-2 rounded-lg bg-[#1E4272] p-3 align-middle hover:cursor-pointer hover:bg-[#275591] active:scale-95 lg:text-xl">
+      <a
+        href="/"
+        className="mt-6 mb-2 flex w-full justify-center gap-2 rounded-lg bg-[#1E4272] p-3 align-middle hover:cursor-pointer hover:bg-[#275591] active:scale-95 lg:text-xl"
+      >
         Sign Up
-      </button>
+      </a>
       <button className="my-4 flex w-full justify-center gap-2 rounded-lg bg-white p-3 align-middle text-[#454545] hover:cursor-pointer hover:bg-gray-200 active:scale-95 lg:text-xl">
         <img src="/images/google.png" alt="" />
         <span className="self-center">Continue with Google</span>
