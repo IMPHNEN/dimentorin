@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Navbar } from "../landing/_components/navbar";
-import { Banner } from "./_components/banner";
+import { Banner } from "../consultation/_components/banner";
 import { Footer } from "../landing/_components/footer";
 import Articles from "./_components/articles";
 import Leaderboard from "./_components/leaderboard";
