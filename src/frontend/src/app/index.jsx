@@ -11,6 +11,7 @@ import { ProfileHelpPage } from "./profile/help/page";
 import { LeaderboardPage } from "./leaderboard/page";
 import { PricingsPage } from "./pricings/page";
 import { ConsultationPage } from "./consultation/page";
+import { DocumentationPage } from "./documentation/page";
 
 export const routes = createBrowserRouter([
   {
@@ -56,5 +57,10 @@ export const routes = createBrowserRouter([
   {
     path: "/consultation",
     element: <ConsultationPage />
+  },
+  {
+    path: "/documentation",
+    element: <DocumentationPage />
   }
 ])
+
