@@ -10,6 +10,7 @@ import { ProfileSettingPage } from "./profile/setting/page";
 import { ProfileHelpPage } from "./profile/help/page";
 import { LeaderboardPage } from "./leaderboard/page";
 import { PricingsPage } from "./pricings/page";
+import { ConsultationPage } from "./consultation/page";
 
 export const routes = createBrowserRouter([
   {
@@ -51,5 +52,9 @@ export const routes = createBrowserRouter([
   {
     path: "/pricings",
     element: <PricingsPage />
+  },
+  {
+    path: "/consultation",
+    element: <ConsultationPage />
   }
 ])
