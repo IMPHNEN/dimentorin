@@ -5,6 +5,9 @@ import { ArticleListPage } from "./articles/page";
 import { GoalsPage } from "./goals/page";
 import { CreateArticlePage } from "./articles/create/page";
 import { SignUpPage } from "./signup/page";
+import { ProfileEditPage } from "./profile/edit/page";
+import { ProfileSettingPage } from "./profile/setting/page";
+import { ProfileHelpPage } from "./profile/help/page";
 
 export const routes = createBrowserRouter([
   {
@@ -14,6 +17,18 @@ export const routes = createBrowserRouter([
   {
     path: "/signup",
     element: <SignUpPage />,
+  },
+  {
+    path: "/profile/edit",
+    element: <ProfileEditPage />,
+  },
+  {
+    path: "/profile/setting",
+    element: <ProfileSettingPage />,
+  },
+  {
+    path: "/profile/help",
+    element: <ProfileHelpPage />,
   },
   {
     path: "/articles",
