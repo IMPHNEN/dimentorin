@@ -4,8 +4,8 @@ import { Input } from "./input";
 export const Form = () => {
   return (
     <section className="text-white">
-      <h1>Sign Up</h1>
-      <p>
+      <h1 className="font-baim mb-4 text-3xl font-bold lg:text-5xl">Sign Up</h1>
+      <p className="mb-8 lg:text-xl">
         Register now to start a 100 day journey of discovering your life
         purpose!
       </p>
@@ -23,12 +23,12 @@ export const Form = () => {
         required
       />
       <Input type="password" placeholder="********" label="Password" required />
-      <button className="block w-full p-3 bg-blue-500 hover:cursor-pointer">
+      <button className="mt-6 mb-2 flex w-full justify-center gap-2 rounded-lg bg-[#1E4272] p-3 align-middle hover:cursor-pointer hover:bg-[#275591] active:scale-95 lg:text-xl">
         Sign Up
       </button>
-      <button className="block w-full p-3 text-black bg-white hover:cursor-pointer">
-        <span>logo</span>
-        <span>Continue with Google</span>
+      <button className="my-4 flex w-full justify-center gap-2 rounded-lg bg-white p-3 align-middle text-[#454545] hover:cursor-pointer hover:bg-gray-200 active:scale-95 lg:text-xl">
+        <img src="/images/google.png" alt="" />
+        <span className="self-center">Continue with Google</span>
       </button>
     </section>
   );
