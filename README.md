@@ -1,3 +1,6 @@
+https://github.com/user-attachments/assets/e7026341-123e-4929-bc0e-a52f17986086
+
+
 # Dimentorin - AI-Powered Learning Platform
 
 > *"Education is not preparation for life; education is life itself."* - John Dewey
