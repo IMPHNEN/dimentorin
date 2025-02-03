@@ -1,23 +1,22 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 
-export const ProfileSetting = () => {
+export const ProfileHelp = () => {
   return (
     <main className="col-span-4 flex flex-col items-center justify-center bg-[#212121] text-white">
       <div className="mb-24 flex max-w-2xl flex-col">
         <div className="mb-6 self-start">
           <span className="font-baim text-start text-2xl font-semibold">
-            Account Setting
+            Help
           </span>
         </div>
         <div className="rounded-lg bg-[#292929] p-6">
           <div className="flex items-center gap-x-5">
-            <Icon icon="mdi:shield-outline" width={24} height={24} />
             <div>
-              <span className="block">Password and security</span>
+              <span className="block">About your account</span>
               <span className="block text-[#D3D2D2]">
-                Settings to secure the account through passwords and other
-                security features
+                Information about account settings, profile management, and
+                preferences
               </span>
             </div>
             <Icon
@@ -31,12 +30,10 @@ export const ProfileSetting = () => {
             <hr className="text-[#403E3E]" />
           </div>
           <div className="flex items-center gap-x-5">
-            <Icon icon="mdi:people-outline" width={24} height={24} />
             <div>
-              <span className="block">Personal detail</span>
+              <span className="block">Privacy policy</span>
               <span className="block text-[#D3D2D2]">
-                Personal user information such as name, address, or date of
-                birth
+                Details on how user data is collected, used, and protected
               </span>
             </div>
             <Icon
@@ -50,12 +47,11 @@ export const ProfileSetting = () => {
             <hr className="text-[#403E3E]" />
           </div>
           <div className="flex items-center gap-x-5">
-            <Icon icon="mdi:journal-outline" width={24} height={24} />
             <div>
-              <span className="block">Your information and permission</span>
+              <span className="block">Open source libraries</span>
               <span className="block text-[#D3D2D2]">
-                Data shared by the user and access permissions for apps or
-                services
+                A list of open-source libraries and their licenses used in the
+                app
               </span>
             </div>
             <Icon
@@ -69,11 +65,11 @@ export const ProfileSetting = () => {
             <hr className="text-[#403E3E]" />
           </div>
           <div className="flex items-center gap-x-5">
-            <Icon icon="mdi:login" width={24} height={24} />
             <div>
-              <span className="block">Log in</span>
+              <span className="block">App updates</span>
               <span className="block text-[#D3D2D2]">
-                Option to log in using a registered account
+                Information about new features, improvements, and bug fixes in
+                the latest app
               </span>
             </div>
             <Icon

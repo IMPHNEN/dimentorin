@@ -19,7 +19,7 @@ export const Sidebar = () => {
           <span className="lg:text-xl">Write article</span>
         </a>
         <a
-          href="/profile"
+          href="/profile/edit"
           className="align-bottom text-lg underline-offset-3 hover:underline"
         >
           <Icon
@@ -31,7 +31,7 @@ export const Sidebar = () => {
           <span className="lg:text-xl">Profile</span>
         </a>
         <a
-          href="#"
+          href="/profile/setting"
           className="align-bottom text-lg underline-offset-3 hover:underline"
         >
           <Icon
@@ -55,7 +55,7 @@ export const Sidebar = () => {
           <span className="lg:text-xl">Payment</span>
         </a>
         <a
-          href="#"
+          href="/profile/help"
           className="align-bottom text-lg underline-offset-3 hover:underline"
         >
           <Icon
