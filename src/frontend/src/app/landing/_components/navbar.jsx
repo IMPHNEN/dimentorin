@@ -1,16 +1,16 @@
 import React from "react";
-import Leaderboard from '../../articles/_components/leaderboard';
+import Leaderboard from "../../articles/_components/leaderboard";
 
 export const Navbar = () => {
   return (
-    <header className="bg-black w-full flex justify-center min-h-[86px] sticky top-0 z-50">
-      <nav className="flex items-center max-w-8xl w-full justify-between px-6 py-4 bg-black text-white">
-        <div className="text-xl font-semibold font-baim select-none">
+    <header className="sticky top-0 z-50 flex min-h-[86px] w-full justify-center bg-black">
+      <nav className="max-w-8xl flex w-full items-center justify-between bg-black px-6 py-4 text-white">
+        <div className="font-baim text-xl font-semibold select-none">
           dimentorin
         </div>
-        <ul className="hidden lg:flex space-x-8">
+        <ul className="hidden space-x-8 lg:flex">
           <li>
-            <a href="#home" className="hover:underline font-bold">
+            <a href="#home" className="font-bold hover:underline">
               Home
             </a>
           </li>
@@ -22,6 +22,16 @@ export const Navbar = () => {
           <li>
             <a href="/leaderboard" className="hover:underline">
               Leaderboard
+            </a>
+          </li>
+          <li>
+            <a href="/consultation" className="hover:underline">
+              Consultation
+            </a>
+          </li>
+          <li>
+            <a href="/buy-token" className="hover:underline">
+              Buy Token
             </a>
           </li>
           <li>
