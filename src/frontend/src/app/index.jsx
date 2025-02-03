@@ -8,7 +8,8 @@ import { SignUpPage } from "./signup/page";
 import { ProfileEditPage } from "./profile/edit/page";
 import { ProfileSettingPage } from "./profile/setting/page";
 import { ProfileHelpPage } from "./profile/help/page";
-import { ConsultationPage } from "./consultation/page";
+import { LeaderboardPage } from "./leaderboard/page";
+import { PricingsPage } from "./pricings/page";
 
 export const routes = createBrowserRouter([
   {
@@ -44,7 +45,11 @@ export const routes = createBrowserRouter([
     element: <GoalsPage />,
   },
   {
-    path: "/consultation",
-    element: <ConsultationPage />,
+    path: "/leaderboard",
+    element: <LeaderboardPage />
   },
-]);
+  {
+    path: "/pricings",
+    element: <PricingsPage />
+  }
+])
