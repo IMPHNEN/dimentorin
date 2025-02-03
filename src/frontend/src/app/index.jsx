@@ -3,23 +3,28 @@ import { createBrowserRouter } from "react-router-dom";
 import { LandingPage } from "./landing/page";
 import { ArticleListPage } from "./articles/page";
 import { GoalsPage } from "./goals/page";
-import { CreateArticlePage } from './articles/create/page';
+import { CreateArticlePage } from "./articles/create/page";
+import { SignUpPage } from "./signup/page";
 
 export const routes = createBrowserRouter([
   {
     path: "/",
-    element: <LandingPage />
+    element: <LandingPage />,
+  },
+  {
+    path: "/signup",
+    element: <SignUpPage />,
   },
   {
     path: "/articles",
-    element: <ArticleListPage />
+    element: <ArticleListPage />,
   },
   {
     path: "/articles/create",
-    element: <CreateArticlePage />
+    element: <CreateArticlePage />,
   },
   {
     path: "/goals",
-    element: <GoalsPage />
-  }
-])
+    element: <GoalsPage />,
+  },
+]);
